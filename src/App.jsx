@@ -3,7 +3,10 @@ import "./App.css"
 import MyNavBar from "./Components/MyNavBar"
 import MyFooter from "./Components/MyFooter"
 import Welcome from "./Components/Welcome"
-import AllTheBooksFunction from "./Components/AllTheBooksFunction"
+import BookList from "./Components/Booklist"
+import fantasy from "./Data/fantasy.json"
+import horror from "./Data/horror.json"
+// import AllTheBooksFunction from "./Components/AllTheBooksFunction"
 // import AllTheBooks from "./Components/AllTheBooks"
 function App() {
   return (
@@ -11,8 +14,8 @@ function App() {
       <header className="App-header">
         <MyNavBar />
         <Welcome />
-        {/* <AllTheBooks /> */}
-        <AllTheBooksFunction />
+        <BookList books={horror} />
+        {/* <AllTheBooksFunction /> */}
         <MyFooter />
       </header>
     </div>
