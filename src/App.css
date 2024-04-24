@@ -1,0 +1,13 @@
+.list-icon {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.list-icon li {
+  display: inline-block;
+}
+
+.cards-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
